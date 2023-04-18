@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono",sans-serif;
+    
+}
+@font-face {
+    font-family: "Sono";
+    src: url("./Sono-VariableFont_MONO\,wght.ttf");
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.content{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#83c5be,#e29578);
+}
+.label{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    font-family: "Sono", sans-serif;
+    margin-top: 1.5rem;
+}
+input[type="date"]{
+    height: 50px;
+    width: 250px;
+    margin-top: 1.5rem;
+}
+.content .calculate{
+    color: #edf6f9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+.dob{
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+button{
+    height: 50px;
+    width: 150px;
+    margin: 1rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.6s;
+    box-shadow: 7px 8px 10px rgba(255,255,255,0.55);
+}
+button:hover{
+    background-color: rgb(109, 255, 206);
+    transform: translateY(-4px);
+}
+.number{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 90px;
+    margin: 1rem;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.number span{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.year .month .days{
+    display: inline-block;
+}
